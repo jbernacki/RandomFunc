@@ -15,6 +15,7 @@
 ##     sigma = the standard deviation of the Normal distribution
 ##     numbins = the number of bins for the histogram
 ##     meanColor = the color for the overlaid mean
+##      linewidth = the width of the mean veritcal line
 ##     seed = a random number generator seed, to ensure
 ##            reproducibility
 ## Outputs: A list with the following elements
@@ -38,3 +39,5 @@ plotRandomNormals <- function(numpts=1000, numbins=15, mu=24, sigma=3, meanColor
 ## Test Function
 
 plotRandomNormals()
+
+plotRandomNormals(linewidth = 5)
